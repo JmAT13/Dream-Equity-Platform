@@ -89,12 +89,12 @@
         .header-nav {
             display: flex;
             align-items: center;
-            gap: 2.5rem;
+            gap: 2rem;
         }
 
         .header-nav a {
-            font-size: 0.75rem;
-            letter-spacing: 0.15em;
+            font-size: 0.7rem;
+            letter-spacing: 0.12em;
             color: rgba(255,255,255,0.7);
             text-decoration: none;
             transition: color 0.3s;
@@ -109,7 +109,7 @@
         }
 
         .lang-switch {
-            font-size: 0.7rem;
+            font-size: 0.65rem;
             color: rgba(255,255,255,0.5);
             transition: color 0.4s;
         }
@@ -724,6 +724,71 @@
             color: var(--bg-dark);
         }
 
+        /* Services Section */
+        .services {
+            background: var(--bg-light);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            margin-top: 3rem;
+            max-width: 500px;
+        }
+
+        .service-card {
+            background: white;
+            border: 1px solid var(--border);
+            padding: 2.5rem;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s;
+            display: block;
+        }
+
+        .service-card:hover {
+            border-color: var(--secondary);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+        }
+
+        .service-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--bg-light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-icon svg {
+            width: 24px;
+            height: 24px;
+            stroke: var(--secondary);
+        }
+
+        .service-card h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.25rem;
+            font-weight: 500;
+            margin-bottom: 0.75rem;
+        }
+
+        .service-card p {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            line-height: 1.9;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-link {
+            font-size: 0.8rem;
+            color: var(--secondary);
+            letter-spacing: 0.1em;
+        }
+
         /* Footer */
         footer {
             background: var(--bg-dark);
@@ -813,7 +878,7 @@
             <a href="#concept">CONCEPT</a>
             <a href="#people">PEOPLE</a>
             <a href="#membership">MEMBERSHIP</a>
-            <a href="#selection">SELECTION</a>
+            <a href="#services">SERVICES</a>
             <a href="#request">REQUEST</a>
             <a href="member.html" style="color: var(--accent);">MEMBER</a>
             <span class="lang-switch">JP / EN</span>
@@ -1153,6 +1218,24 @@
                 </div>
                 <button type="submit" class="form-submit">契約を申請する</button>
             </form>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+        <div class="container">
+            <p class="section-label">SERVICES</p>
+            <h2 class="section-title">特別プログラム</h2>
+            <div class="services-grid">
+                <a href="care.html" class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                    </div>
+                    <h3>介護施設入居者様向け</h3>
+                    <p>施設に入っても「人生の主導権」を手放さないために。施設との協定スキームを含む専門プログラム。</p>
+                    <span class="service-link">詳細を見る →</span>
+                </a>
+            </div>
         </div>
     </section>
 
